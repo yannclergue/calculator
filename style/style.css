@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calculatrice {
+    display: flex;
+}
+
+.calculatrice > div {
+    border: 5px purple solid;
+}
+
+.affichage {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.colone {
+    display: flex;
+    flex-grow: 1;
+    background-color: purple;
+}
+
+.digit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 4;
+}
+
+.digit > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3em;
+}
+
+.digit > div div {
+
+}
