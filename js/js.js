@@ -23,13 +23,30 @@ function division(a, b){
 console.log(`Voici le résultat de la division : ${division(4, 2)}`)
 
 let firstNumber = 5
-let operator = "+"
+let operateur = "*"
 let lastNumber = 10
 
-function operation(firstNumber, lastNumber){
-    let resultat = soustraction(firstNumber, lastNumber)
-    return resultat
+function operation(firstNumber, operateur, lastNumber){
+    if(operateur === "+"){
+        let resultat = addition(firstNumber, lastNumber)
+        return resultat
+    }
+    else if(operateur === "-"){
+        let resultat = soustraction(firstNumber, lastNumber)
+        return resultat
+    }
+    else if(operateur === "*"){
+        let resultat = multiplication(firstNumber, lastNumber)
+        return resultat
+    }
+    else if(operateur === "/"){
+        let resultat = division(firstNumber, lastNumber)
+        return resultat
+    }
+    else {
+        console.log("merci de m'être un opérateur valide, sinon je peux pas calculer")
+    }
 }
 
-console.log(operation(5, 10))
+console.log(operation(firstNumber, operateur, lastNumber))
 
